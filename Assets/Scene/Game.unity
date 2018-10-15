@@ -390,7 +390,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 556014201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d27c762b2630bf64fb592e5c6297a801, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ddbdae67afb7fc4da5a456330582d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onMove: 1
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 832828739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d6d0a8badb8794ebcbe7ad6a7ebee9, type: 3}
+  m_Script: {fileID: 11500000, guid: df075ae1b84f7b64dabe2a71650288d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textScore: {fileID: 1871534635}
@@ -602,10 +602,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1143663611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb2e769b2bcc0f0448c00a87336f31d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 60ddce89941a52a458027f4103841a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1326443306145170, guid: 24645e7287360c74bb635c162e4af009, type: 2}
+  prefab: {fileID: 1326443306145170, guid: c5c509ef777dba142aeb925d1757c6d9, type: 2}
 --- !u!1 &1532798581
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,8 +691,8 @@ GameObject:
   - component: {fileID: 1611343448}
   - component: {fileID: 1611343447}
   - component: {fileID: 1611343446}
-  - component: {fileID: 1611343450}
   - component: {fileID: 1611343451}
+  - component: {fileID: 1611343450}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -714,7 +714,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0a85cdc5278df6242a354aa475370343, type: 2}
+  - {fileID: 2100000, guid: 75d16eb2e84df0945a14b225f0f0d571, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -774,10 +774,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1611343445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1b918d7b39b19c48bf32e10505e153f, type: 3}
+  m_Script: {fileID: 11500000, guid: 6150430a2e4e7354b9608eb5a78af72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 1938587793397066, guid: 832eeba01fd695746b4ea1dee457369a, type: 2}
+  particle: {fileID: 1938587793397066, guid: 02c6a84315b136e46a1741293a83defc, type: 2}
 --- !u!54 &1611343451
 Rigidbody:
   m_ObjectHideFlags: 0

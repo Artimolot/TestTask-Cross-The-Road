@@ -263,7 +263,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 674234350}
+      - m_Target: {fileID: 1585340198}
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -372,11 +372,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 674234348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d6d0a8badb8794ebcbe7ad6a7ebee9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ddbdae67afb7fc4da5a456330582d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textScore: {fileID: 0}
-  buttonRestart: {fileID: 0}
+  onMove: 1
 --- !u!81 &674234351
 AudioListener:
   m_ObjectHideFlags: 0
@@ -477,6 +476,7 @@ GameObject:
   - component: {fileID: 1585340196}
   - component: {fileID: 1585340195}
   - component: {fileID: 1585340194}
+  - component: {fileID: 1585340198}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -560,3 +560,16 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1585340198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585340193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df075ae1b84f7b64dabe2a71650288d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textScore: {fileID: 0}
+  buttonRestart: {fileID: 0}

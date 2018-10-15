@@ -13,9 +13,7 @@ public class PlayerController : MonoBehaviour
 #if UNITY_EDITOR
 		if (Input.GetKeyDown(KeyCode.W))
 		{
-			gameObject.transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
-			point++;
-			UI.Instance.textScore.text = "Score: " + point;
+			MovePlayer();
 		}
 #else
 		if (Input.touchCount > 0)
@@ -23,9 +21,7 @@ public class PlayerController : MonoBehaviour
 			Touch touch = Input.GetTouch(0);
 			if(touch.phase == TouchPhase.Began)
 			{
-				gameObject.transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
-				point++;
-				UI.Instance.textScore.text = "Score: " + point;
+				MovePlayer();
 			}
 		}
 #endif
@@ -37,6 +33,14 @@ public class PlayerController : MonoBehaviour
 		}
 		
 	}
+
+	private void MovePlayer()
+	{
+		gameObject.transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
+		point++;
+		UI.Instance.textScore.text = "Score: " + point;
+	}
+
 	private void OnCollisionEnter(Collision collision)
 	{
 		Camera.main.GetComponent<CameraController>().onMove = false;

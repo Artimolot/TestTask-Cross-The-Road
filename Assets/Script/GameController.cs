@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
 	public GameObject prefab;
-	public  Queue<GameObject> enemys = new Queue<GameObject>();
+	public  Queue<Enemy> enemys = new Queue<Enemy>();
 	private int countEnemys = 20;
 	private float line =  2;
 	private float distance = 2;
@@ -29,7 +29,7 @@ public class GameController : MonoBehaviour
 				line++;
 			}
 			distance += 2;
-			enemys.Enqueue(obj);
+			enemys.Enqueue(obj.GetComponent<Enemy>());
 		}
 	}
 
@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour
 		{
 			ResetObject(enemys.Dequeue());
 		}
-		foreach (GameObject enemy in enemys)
+		foreach (Enemy enemy in enemys)
 		{
 			if(enemy.GetComponent<Enemy>().onRight == true)
 			{
@@ -60,7 +60,7 @@ public class GameController : MonoBehaviour
 		}
 	}
 
-	private void ResetObject(GameObject obj)
+	private void ResetObject(Enemy obj)
 	{
 		if(obj.GetComponent<Enemy>().onRight == true)
 		{
@@ -76,7 +76,7 @@ public class GameController : MonoBehaviour
 		distance += 2;
 	}
 
-	private void ResetLineObject(GameObject obj)
+	private void ResetLineObject(Enemy obj)
 	{
 		if(obj.GetComponent<Enemy>().onRight == true)
 		{
